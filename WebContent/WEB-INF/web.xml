@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>MyContactList</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>/WEB-INF/JSPFiles/DisplayAllContacts.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>indexJSP</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>indexJSP</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addContactJSP</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/AddContactFORM.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addContactJSP</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addJSP</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/AddContactToContactList.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addJSP</servlet-name>
+  	<url-pattern>/addContact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>displayAllContactsJSP</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/DisplayAllContacts.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>displayAllContactsJSP</servlet-name>
+  	<url-pattern>/allContacts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>contactProfile</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/ContactProfile.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>contactProfile</servlet-name>
+  	<url-pattern>/contactProfile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EditContact</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/EditContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EditContact</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateContact</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/UpdateContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateContact</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteContact</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/DeleteContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteContact</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SearchContact</servlet-name>
+  	<jsp-file>/WEB-INF/JSPFiles/SearchContact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchContact</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
