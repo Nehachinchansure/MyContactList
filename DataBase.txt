@@ -1,0 +1,10 @@
+delimiter $$
+
+CREATE TABLE `contactlist` (
+  `Name` varchar(50) NOT NULL,
+  `PhoneNumber` bigint(20) DEFAULT NULL,
+  `EmailID` varchar(50) DEFAULT NULL,
+  `Date_OF_Birth` date DEFAULT NULL,
+  PRIMARY KEY (`Name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
